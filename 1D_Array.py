@@ -7,6 +7,12 @@ for i in range(num):
     element = input()
     arr.append(element)
 
-print("The elements of array are: ")
-for i in range(num):
-    print(arr[i])
+print("Enter the value to delete: ")
+val = input()
+if val in arr:
+    arr.remove(val)
+    print("New array is: ")
+    for i in range(num-1):
+        print(arr[i])
+else:
+    print("Element not found")
