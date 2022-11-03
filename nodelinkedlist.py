@@ -5,4 +5,4 @@ class Node:
 
 n1=Node(8)
 print(n1.data) 
-print(n1.next)       
+print(n1.next)      
