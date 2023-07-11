@@ -1,12 +1,25 @@
+'''
+1-D Array
+- Declare array
+- Enter values
+- Delete value
+'''
+
+# Get the size of array
 print("Enter the number of elements in an array",end=" ")
 num = int(input())
-arr = []
+
+# Declare an array
+arr = []    
+
 print("Enter", num, "Elements: ",end="")
 
+# Enter elements into array
 for i in range(num):
     element = input()
     arr.append(element)
 
+# Delete an element by asking user
 print("Enter the value to delete: ")
 val = input()
 if val in arr:
