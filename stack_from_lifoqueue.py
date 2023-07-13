@@ -2,8 +2,12 @@
 Create Stack from LIFOQUEUE
 Functions : put, get, qsize, full, empty
 '''
+# Queue module contains the LIFO queue.
+# have additional functions like put, get, qsize, full, maxsize and empty
 
 from queue import LifoQueue
+
+#created the variable stack
 stack=LifoQueue(maxsize=3)
 stack.put(2)
 stack.put(3)
@@ -16,3 +20,4 @@ print(stack.empty())
 stack.get()
 stack.get()
 print(stack.empty())
+ 
