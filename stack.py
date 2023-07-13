@@ -2,6 +2,7 @@
 Create a stack
 Stack uses LIFO
 '''
+#Implementation of stack using List
 
 stack = []
 stack.append("Welcome")
