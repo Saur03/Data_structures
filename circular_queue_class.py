@@ -7,25 +7,34 @@ head and tail starts from -1
 '''
 
 class circularQueue():
+    # constructor
     def __init__(self, k):
         self.k =k
+        # initialising queue with none
         self.queue = [None] * k
         self.head = self.tail = -1
 
     def enqueue(self, data):
+        # condition if queue is full
         if ((self.tail + 1) % self.k) == self.head:     #overlap tail, if meets with head
             print("Circular queue is full\n")
+            
+        # condition for empty queue
         elif (self.head == -1):                         # head not > 0; no element present
             self.head = 0
             self.tail = 0
             self.queue[self.tail] = data
-        else:                                           # at least 1 element and not full
+        else:        
+            # next position of tail                     # at least 1 element and not full
             self.tail = (self.tail + 1) % self.k                
             self.queue[self.tail] = data
     
     def dequeue(self):
+        # Condition for empty queue
         if (self.head == -1):                           # no element to pop
             print("Circular queue is empty\n")
+            
+        # Condition for only onr element    
         elif (self.head == self.tail):                  # 1 element to pop
             temp = self.queue[self.head]
             self.head = -1
@@ -37,6 +46,8 @@ class circularQueue():
             return temp
         
     def printQueue(self):
+        
+        # Condition for empty queue
         if (self.head == -1):                           # no element
             print("Circular queue is empty\n")
         
@@ -51,7 +62,7 @@ class circularQueue():
                 print(self.queue[i], end=" ")
             print()
 
-
+# Driver code
 obj = circularQueue(5)
 obj.enqueue(10)
 obj.enqueue(20)
