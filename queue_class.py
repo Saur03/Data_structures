@@ -1,8 +1,17 @@
 '''
-Create a class for queue to enqueu and dequeue elements
-example: append and pop elements
-'''
+Queue is first in first out (FIFO), example - ticket counters and bus stations.
+In queue, there are 4 operations:-
+1. enqueue() - used to insert at top
+2. dequeue() - delete the top element from the queue
+3. peekfirst() - to get the first element of queue
+4. peeklast() - to get the last element of queue
 
+time complexity is of 0(1)
+'''
+'''
+Create a class queue to perform enqueue and dequeue operations and use append and pop functions for insertion and deletion of an element
+'''
+#created a class queue and in this, there are 5 functions performed like init, queue, dequeu , display and size:-
 class Queue:
     def __init__(self):
         self.queue = []
