@@ -1,10 +1,15 @@
-# Transversal in linked list
+'''
+ Transversal in Linked List
+ '''
+# created the class of node.
 
 class Node:
+    # call constructor of init method and its parameter
     def __init__ (self,data):
         self.data=data   #n1.data=5,n2.data=10,n3.data=15,n4.data=20
         self.next=None   #n1.next=None,n2.next=None,n3.next=None,n4.next=None
 
+#Implementation of singly linked list
 class Sll:
     def __init__(self):
         self.head=None  #sll.head=None
