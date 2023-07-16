@@ -1,3 +1,11 @@
+# Insertion of beginning of linked list:-
+'''
+     nb=Node(data)                       
+     nb.next=self.head                    
+     self.head=nb    
+'''
+
+# Created a class node and created a init method in class node.
 class Node:
     def __init__ (self,data):
         self.data=data   #n1.data=5,n2.data=10,n3.data=15,n4.data=20,nb.data=2
@@ -15,6 +23,8 @@ class Sll:
             while a is not None:             #a=sll.head=n1 #a=n1.next  
                 print(a.data, end= " ")      #a.data=n1.data    
                 a=a.next                     #a=n1.next, a=n2.next, a=n3.next
+                
+# Created a function of insert_at_beginning
 
     def insert_at_beginning(self,data):      #data=2
         print()
