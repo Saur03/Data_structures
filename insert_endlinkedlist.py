@@ -1,4 +1,13 @@
+# This is the code for insert at the end of linked list.
 
+'''
+Psuedo code for this:- 
+        ne=Node(data)
+        a=self.head                         
+        while a.next is not None:                
+            a=a.next                         
+        a.next=ne    
+'''
 class Node:
     def __init__ (self,data):
         self.data=data   #n1.data=5,n2.data=10,n3.data=15,n4.data=20,nb.data=2,ne.data=25
