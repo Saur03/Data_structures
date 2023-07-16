@@ -1,4 +1,15 @@
+#Insertion at specified node of linked list.
+'''
+        nib=Node(data)
+        a=self.head                
+        for i in range(1,position-1):             
+            a=a.next                              
+            nib.next=a.next                       
+            a.next=nib  
+'''
+#Created a class node and init method or constructor have passed
 class Node:
+    # created a constructor
     def __init__ (self,data):
         self.data=data   #n1.data=5,n2.data=10,n3.data=15,n4.data=20,nb.data=2,ne.data=25,nib=7
         self.next=None   #n1.next=None,n2.next=None,n3.next=None,n4.next=None,nb.next=None,ne.next=None,nib.next=None
@@ -33,7 +44,7 @@ class Sll:
     def insertion_at_specified_node(self,position,data):  #position=3,data=7
         print()
         nib=Node(data)
-        a=self.head                #a=sll.head=nb
+        a=self.head                               #a=sll.head=nb
         for i in range(1,position-1):             #i=1
             a=a.next                              #a=nb.next=n1
             nib.next=a.next                       #nib.next=n1.next=n2
