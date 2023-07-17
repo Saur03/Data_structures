@@ -1,3 +1,4 @@
+#Deletion at the beginning
 class Node:
     def __init__ (self,data):
         self.data=data   #n1.data=5,n2.data=10,n3.data=15,n4.data=20,nb.data=2,ne.data=25,nib=7
@@ -41,8 +42,11 @@ class Sll:
 
     def deletion_at_beginning(self):
         print()
+        # Creating a temporary variable 'a' and assigned self.head
         a=self.head
+        # we have to delete first node and we have write self.head = a.next which means that node have shifted from one node to another and head will point to another node
         self.head=a.next
+        # we also have to disconnect first node, that is the reason, we have write below syntax
         a.next=None
 
 
