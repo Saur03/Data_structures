@@ -1,3 +1,5 @@
+# logic for deletion at particular node
+
 class Node:
     def __init__ (self,data):
         self.data=data   #n1.data=5,n2.data=10,n3.data=15,n4.data=20,nb.data=2,ne.data=25,nib=7
@@ -58,6 +60,7 @@ class Sll:
         print()
         prev=self.head
         a=self.head.next
+        # only logic for deletion of particular node is to use for loop and position and position will help us to cancel that particular node and uses these 2 lines only-  prev.next=a.next and  a.next=None 
         for i in range(1,position-1):
             a=a.next
             prev=prev.next
