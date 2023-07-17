@@ -1,3 +1,4 @@
+# Creating a singly linked list with insertion at the end.
 class Node:
     def __init__ (self,data):
         self.data=data   #n1.data=5,n2.data=10,n3.data=15,n4.data=20,nb.data=2,ne.data=25,nib=7
@@ -47,6 +48,7 @@ class Sll:
 
     def deletion_at_end(self):
         print()
+        # in the below syntax, firstly we have created a variable "prev" and given head to that and checking with while loofp that the data of the node is none or not,if none, we have delete the last node
         prev=self.head
         a=self.head.next
         while a.next is not None:
