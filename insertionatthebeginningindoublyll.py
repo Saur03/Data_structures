@@ -1,3 +1,5 @@
+# doubly linked list and insertion at the beginning
+
 class Node:
     def __init__(self,data):      #n1,5  #n2,10
         self.data=data
@@ -31,6 +33,8 @@ class Dll:
 
     def insertion_at_beginning(self,data):
         print()
+#created a node ns and in that head point to new node and given head of new node to next node and previous of new node is none
+
         ns=Node(data)
         a=self.head
         a.prev=ns

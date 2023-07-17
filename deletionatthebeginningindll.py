@@ -1,4 +1,4 @@
-# doubly linked list and insertion at the beginning
+# doubly linked list and deletion at the beginning
 
 class Node:
     def __init__(self,data):      #n1,5  #n2,10
@@ -63,6 +63,7 @@ class Dll:
         
     def deletion_at_beginning(self):
         print()
+        # created a variable "a" and given that head and then put that head to next and make both prev and next of the first node none and after that first node gets deleted
         a=self.head
         self.head=a.next
         a.next=None
