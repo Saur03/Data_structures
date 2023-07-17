@@ -1,4 +1,14 @@
+#Doubly linked list and perform both the forward traversal and backward traversal
+'''
+Psuedo code is -  a=self.head                    
+            while a.next is not None:      
+                a=a.next                   
+            while a is not None:
+                print(a.data, end=" ")
+                a=a.prev  
+'''
 class Node:
+    # created a init method or constructor
     def __init__(self,data):      #n1,5  #n2,10
         self.data=data
         self.next=None
