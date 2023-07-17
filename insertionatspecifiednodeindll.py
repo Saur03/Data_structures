@@ -1,3 +1,4 @@
+# insertion at specified node in doubly linked list
 class Node:
     def __init__(self,data):      #n1,5  #n2,10
         self.data=data
@@ -50,6 +51,7 @@ class Dll:
         print()
         nib=Node(data)
         a=self.head
+        # insertion at specified node using for loop and position variable and using new node, head and prev to connect both the nodes
         for i in range(1,position-1):
             a=a.next
         nib.prev=a
