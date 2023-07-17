@@ -1,3 +1,4 @@
+# implementation of insertion at end in doubly linked list
 class Node:
     def __init__(self,data):      #n1,5  #n2,10
         self.data=data
@@ -39,6 +40,7 @@ class Dll:
 
     def insertion_at_end(self,data):
         print()
+        # created a new node ne so that we can add a new node to the last node and putting 'a" to next node and making new node previous none
         ne=Node(data)
         a=self.head
         while a.next is not None:
