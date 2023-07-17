@@ -1,4 +1,4 @@
-# doubly linked list and insertion at the beginning
+# doubly linked list and insertion at the beginning in list
 
 class Node:
     def __init__(self,data):      #n1,5  #n2,10
