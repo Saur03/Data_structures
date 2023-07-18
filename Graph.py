@@ -1,5 +1,7 @@
+#implementation of graph and it is a mathematical concept and graph is consist of edges and vertices
+# created class graph and called init method or constructor and pass edges and vertices
 class Graph:
-    # Constructor
+    # Constructor or inot method
     def __init__(self, edges, n):
         # allocate memory for the adjacency list
         self.adjList = [[] for _ in range(n)]
