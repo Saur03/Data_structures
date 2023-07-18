@@ -1,3 +1,6 @@
+#Implementation of binary search tree
+
+# Created a class Node and called init method
 class Node:
     def __init__(self,key):
         self.key = key
@@ -26,7 +29,7 @@ def insert(node, key):
 
     return node
 
-# Find the inorder succesor is defined
+# Find the inorder succesor is defined or the size 
 def minValueNode(node):
     current = node
 
