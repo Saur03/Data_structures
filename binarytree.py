@@ -1,8 +1,12 @@
+# Implementation of binary tree useing inorder, post order and pre-order traversal
+
 class Node:
     def __init__(self,key):
         self.left=None
         self.right=None
         self.val=key
+        
+    # Implementation of preorder is print, left and then rigjht
     def traPreorder(self):
         print(self.val, end= ' ')
         if self.left:
@@ -10,6 +14,7 @@ class Node:
         if self.right:
             self.right.traPreorder()
 
+    # Implementation of Inorder is left, print and then right  
     def traInorder(self):
         if self.left:
             self.left.traInorder()
@@ -17,6 +22,7 @@ class Node:
         if self.right:
             self.right.traInorder()
 
+    # implementation of post order is left, right and print 
     def traPostorder(self):
         if self.left:
             self.left.traPostorder()
