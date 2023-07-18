@@ -1,3 +1,5 @@
+# BFS is an algorithm to trace the nodes of the graph in a breadth-first order; that is the neighbouring nodes in a single-level are traversed first, then the nodes in the next level are traversed.
+
 import collections
 def bfs(graph, root):
 
