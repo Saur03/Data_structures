@@ -1,3 +1,9 @@
+# In merge sort, the problem is divided into two sub problems in every iteration
+# hence efficiency is increased drastically
+# It follow divide and conquer approach
+# Divide break the problem into 2 sub problem which continues until problem set is left with one element only
+# Conquer basically merges the 2 sorted array into the original array 
+
 def merge_Sorting(arr):
     if len(arr) > 1:
         x = len(arr)//2
