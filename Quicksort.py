@@ -1,3 +1,10 @@
+# Quick sort is one of the most widely used sorted algorithm
+# It follow divide and rule paradigm
+# Recursion is used in quicksort implementation
+# In each recurion call, a pivot is chosen then the array is partitioned in such a way that all the elements less than pivot lie to the left and all the elements greater than pivot lie to the right
+# After every call , the chosen pivot occupies its correct position in the array which it is supposd to as in sorted array
+# So with each step, our problem gets reduced by 2 which leads to quick sorting
+# pivot can be last element of current array, first element of current array, or any random element 
 # Partition position finding function
 def partition(arr, l, h):
     # right most element = pivot
