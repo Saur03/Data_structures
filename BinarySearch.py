@@ -1,3 +1,7 @@
+# Binary search is one of the searching algorithm
+# it can be used on sorted array
+# this searching technique follows the divide and conquer stategy and search space always always reduce to half in every iteration
+# this is a very efficient technique for searching but it needs some order on which partition of array will occur
 # Binary Search in python
 def binarySearch(array, x, low, high):
     while low <= high:
